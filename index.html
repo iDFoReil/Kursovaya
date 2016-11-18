@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>v0.4</title>
+	<link rel='stylesheet' href='./css/style.css'>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>-->
+	<meta charset="UTF-8">
+	</head>
+	<body width="100%">
+	<canvas id='canvas' style='border:1px solid red'>
+			<p>not working</p>
+		</canvas>
+	</div>
+		<hr>
+		<table width="100%">
+			<tr>
+				<td width="33%" align="center">
+		x:<input id="setRectX" type="text" size="1" value="150"></input>
+		<br>
+		y:<input id="setRectY" type="text" size="1" value="200"></input>
+		<br>
+		Rectangle Width:<br>50<input id="setRectWidth" type="range" min=50 max=150 step=50>150
+		<br>
+		Rectangle Height:<br>50<input id="setRectHeight" type="range" min=50 max=150 step=50>150
+		<br>
+		<input type="button" value="addRectangle" onclick='addRect()'>
+	</td>
+	<td width="33%" align="center">
+		x:<input id="setCircleX" type="text" size="1" value="700"></input>
+		<br>
+		y:<input id="setCircleY" type="text" size="1" value="200"></input>
+		<br>
+		Radius: 50<input id="setCircleR" type="range" min=50 max=150 step=50>150
+		<br>
+		<input type="button" value="addCircle" onclick="addCircle()">
+	</td>
+	<td align="center">
+		A:(<input id="setTriangleAx" type="text" size="1" value="300"></input>;
+			 <input id="setTriangleAy" type="text" size="1" value="300"></input>)
+			<br>
+		B:(<input id="setTriangleBx" type="text" size="1" value="500"></input>;
+			 <input id="setTriangleBy" type="text" size="1" value="300"></input>)
+			 <br>
+		C:(<input id="setTriangleCx" type="text" size="1" value="400"></input>;
+			 <input id="setTriangleCy" type="text" size="1" value="500"></input>)
+				<br>
+		<input type="button" value="addTriangle" onclick="addTriangle()">
+	</td>
+</tr>
+</table><hr>
+	<script src='./js/drawing.js'></script>
+	<script src='./js/script.js'></script>
+		<script src='./js/addRect.js'></script>
+		<script src='./js/addCircle.js'></script>
+		<script src='./js/addTriangle.js'></script>
+	</body>
+</html>
